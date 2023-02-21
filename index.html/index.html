@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="このサイトは私のポートフォリオです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+
+  <!--header-->    
+  <header id="header">
+   <h1 class="sitetitle">
+     <a href="#">MyPortfolio</a>
+   </h1>
+   <nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="./img/twitter.png" alt="Tiwtter" class="icon"></a></li>   
+    </ul>
+   </nav>
+  </header>
+
+<!--main-->
+  <div id="main">
+    <picture>
+      <source media="(max-width: 680px)" srcset="./img/main-sp.jpg">
+      <img src="img/24821862_s (3).jpg" alt="">
+    </picture>
+  </div>
+
+  <!--about-->
+  <div id="about" class="wrapper">
+   <h2 class="sec-title">about me</h2>
+   <ul>
+    <li>Name:牧野光</li>
+    <li>21歳未経験からWEBエンジニアを目指して学習中</li>
+    <li>webサイト制作、アプリ開発へのアドバイス、コメントはこちらから</li>
+    <li>メールアドレス×××××××＠×××.com</li>
+   </ul>
+     <p>現在はhtml.CSSのみのシンプルなwebサイトですが、新しいWEBサイト、アプリなどの作成、更新を行っていく予定です。
+      改善点、問題点等ございましたらコメントお願い致します。
+     </p> 
+  </div>
+
+  <section id="works" class="wrapper">
+   <h2 class="sec-title">Works</h2>
+   <ul>
+    <li><img src="img/25301518_s.jpg" alt="works1"></li>
+    <li><img src="img/24981456_s.jpg" alt="works1"></li>
+    <li><img src="img/25503316_s.jpg" alt="works1"></li>
+    <li><img src="img/25653687_s.jpg" alt="works1"></li>
+    <li><img src="" alt=""></li>
+    <li><img src="img/25653687_s.jpg" alt="works1"></li>
+    <li><img src="img/25503316_s.jpg" alt="works1"></li>
+    <li><img src="img/24981456_s.jpg" alt="works1"></li>
+    <li><img src="img/25301518_s.jpg" alt="works1"></li>
+   </ul>
+  </section>
+ 
+  <section id="news" class="wrapper">
+    <h2 class="sec-title">News</h2>
+    <dl>
+      <dt>2023/2/9</dt>
+      <dd>ポートフォリオ作成</dd>
+      <dt>2023/2/9</dt>
+      <dd>ポートフォリオ作成</dd>
+      <dt>2023/2/9</dt>
+      <dd>ポートフォリオ作成</dd>
+      <dt>2023/2/9</dt>
+      <dd>ポートフォリオ作成</dd>
+      <dt>2023/2/9</dt>
+      <dd>ポートフォリオ作成</dd>
+    </dl>
+      
+
+   </section>
+
+   <section id="contact" class="wrapper">
+    <h2 class="sec-title">Contact</h2>
+    <p>お問い合わせはこちらから</p>
+    <form action="#" method="post">
+     <dl>
+      <dt><label for="name">お名前</label></dt>
+      <dd><input type="text" id="name"></dd>
+      <dt><label for="email">メールアドレス</label></dt>
+      <dd><input type="email" id="email"></dd>
+      <dt><label for="content">内容</label></dt>
+      <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+      </dl>
+      <div class="button"><input type="submit" value="送信"> </div>
+    </form>
+
+   </section>
+
+   <footer></footer>
+</body>
+</html>

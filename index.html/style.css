@@ -1,0 +1,275 @@
+html {
+     font-size: 100%;
+}
+
+body {
+     color: black;
+     font-family: "Noto Sans JP"; 
+     background-color: rgb(249, 246, 243);
+}
+
+a {
+     text-decoration: none;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+   list-style: none;
+   font-size: 1.2rem;   
+}
+
+.wrapper {
+    max-width:960px;
+    margin: 0 auto 130px auto;
+    font-size: 1rem;
+    padding: 0 4%;
+    text-align: ;
+}
+
+
+.sitetitle {
+    line-height: 1px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.sitetitle a {
+    color: black;
+}
+
+.sec-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 80px;
+    border-bottom: solid 1px blue;
+}
+
+/*headder*/
+#header {
+    max-width: 1060px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 5%;
+    margin: 0 auto;
+}
+
+#header ul{
+    display: flex;
+    padding: 10px 0px;
+}
+
+#header li{
+    font-size: 1.1rem;
+    margin-left: 20px;
+    
+}
+
+#header ul li a{
+    color: black;
+    transition: all 0.5s;
+}
+
+#header ul li a:hover{
+    opacity: 0.5;
+    font-size: 1.5rem;
+    color: rgb(227, 51, 7)
+}
+
+
+#header li img.icon{
+    width: 30px;
+}
+
+/*main*/
+#main{
+    margin-bottom: 80px;
+}
+
+
+#main img{
+    width: 100%;
+    max-width: 1920px;
+    height: 350px;
+    object-fit: cover;
+    padding: 0 %;
+}
+
+#about ul{
+    margin-bottom: 30px;
+}
+
+#about ul li:first-child{
+    margin-bottom: 30px;
+}
+
+#about ul li{
+    margin-botto: 30px;
+}
+
+#works ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-bottom: 50px;
+}
+
+#works ul li{
+    width:31% ;
+    margin-bottom: 18px;
+}
+
+
+#works ul li img{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#works ul li img:hover{
+    transform: scale(1.1,1.1);
+    opacity: 0.6;
+}
+
+#news dl{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#news dt{
+    width: 20%;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+#news dd{
+    width: 80%;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+
+#contact p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact dt{
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+#contact dd{
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+#contact dd input,
+#contact dd textarea{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#contact .button{
+    text-align: center;
+    
+}
+
+#contact .button input{
+    border: 1px solid black;
+    width: 200px;
+    padding: 15px 0px;
+    background-color: black;
+    color: aliceblue;
+   transition: all 0.3s;
+}
+
+#contact .button input:hover{
+    background-color: rgb(240, 249, 249);
+    color: black;
+}
+
+@media screen and (max-width:680px) {
+    .sitetitle{
+        margin-top: 20px;
+    }
+
+
+    #header{
+        flex-direction: column;
+        height: auto;
+        line-height:  40px;
+        margin-top: 20px;
+    }
+    
+    #header h1 {
+        margin-bottom: 20px;
+    }
+
+
+    #header li{
+        margin-left: 30px;
+    }
+
+    #header li img.icon{
+        margin-top: 5px;
+    }
+
+    #about li {
+        margin-top:10px;
+    }
+
+    #works ul {
+        flex-direction: column;
+    }
+
+    #works ul li{
+        width: 100%;
+    }
+
+    #news dl{
+        flex-direction: column;
+    }
+
+    #news dt{
+        width: 100%;
+        border-bottom: none;
+        padding: 0px;
+    }
+
+    #news dd{
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    #contact dl{
+        flex-direction: column;
+        
+    }
+
+    #contact dt{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #contact dd{
+        width: 100%;
+    }
+}
+
