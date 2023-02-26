@@ -105,6 +105,10 @@ li {
     padding: 0 %;
 }
 
+#about span {
+    color: rgb(236, 45, 45);
+}
+
 #about ul{
     margin-bottom: 30px;
 }
@@ -115,6 +119,12 @@ li {
 
 #about ul li{
     margin-botto: 30px;
+}
+
+#about li:first-child {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #works ul{
